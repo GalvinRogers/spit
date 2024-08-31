@@ -8,6 +8,9 @@ body{
     overflow: hidden; 
     text-overflow: ellipsis;
 }
+.container{
+  overflow: hidden;
+}
 .section-title{
   text-align: center;
   padding-bottom: 30px;
