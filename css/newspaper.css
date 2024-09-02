@@ -11,6 +11,9 @@ body{
 header{
     background: linear-gradient(100deg,#004aad,#09aea0);
 }
+.container{
+    overflow: hidden;
+}
 .navbar-brand{
     color: #fff !important;
     text-shadow: 2px 2px#000;
