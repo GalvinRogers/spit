@@ -11,13 +11,21 @@
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
   crossorigin="anonymous"
   />
-  
-    <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "mi7RZvPYR57tYgpkB",
+        });
+    })();
+    </script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/form.css"> 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -102,13 +110,13 @@
                 </div>
 
                 <label for="email" class="form-label">Gmail:</label>
-                <input type="email" class="form-control mb-2 must-write" id="gmail" placeholder="Thanh@gmail.com">
+                <input type="email" class="form-control mb-2 must-write" id="email" placeholder="Thanh@gmail.com">
 
                 <label for="introduction" class="form-label">Giới thiệu về bản thân:</label>
                 <textarea name="introduction" class="form-control mb-2 must-write" style="height: 140px;"></textarea>
 
                 <div class="mb-4 text-center">
-                    <button type="submit" class="btn btn-primary py-2 py-2 d-inline-block fs-6 fw-bold mb-4 rounded-4" id="liveToastBtn">Đăng ký</button>
+                    <button type="button" class="btn btn-primary py-2 py-2 d-inline-block fs-6 fw-bold mb-4 rounded-4" onclick="submitForm()" id="liveToastBtn">Đăng ký</button>
                     <button type="reset" class="btn btn-primary py-2 py-2 d-inline-block fs-6 fw-bold mb-4 rounded-4">Xóa</button>
                 </div>
             </form>
@@ -134,7 +142,7 @@
           <div class="toast-header">
             <div class="rounded me-2" style="background-color: green; width: 20px; height: 20px;"></div>
             <strong class="me-auto">Đăng ký thành công</strong>
-            <small>yeppi</small>
+            <small>Check gmail</small>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
           <div class="toast-body">
@@ -153,12 +161,12 @@
                     <a href="https://it.husc.edu.vn/"><img class="img-fluid text-lg-end mt-3" src="../img/logoKhoa.png" alt="" style="width: 400px; height: auto;"></a>
                 </div>
                 <div class="col-6 col-lg-4">
-                    <h4 class="fw-bold pt-3 pb-2 fs-6">Social Media</h4>
+                    <h4 class="fw-bold pt-3 pb-2 fs-6">Social Media Icons</h4>
                     <div>
-                        <a href="https://www.facebook.com/clbhtlt.ithusc" target="_blank" class="text-decoration-none text-light"><i class="bi bi-facebook fs-5 me-2"></i></a>
-                        <a href="https://www.youtube.com/watch?v=VvRiJCr3i10&t=2s&ab_channel=TR%C6%AF%E1%BB%9CNG%C4%90%E1%BA%A0IH%E1%BB%8CCKHOAH%E1%BB%8CC%2C%C4%90%E1%BA%A0IH%E1%BB%8CCHU%E1%BA%BE" target="_blank" class="text-decoration-none text-light"><i class="bi bi-youtube fs-5 me-2"></i></a>
-                        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-github fs-5 me-2"></i></a>
-                        <a href="https://it.husc.edu.vn/CLB-ho-tro-lap-trinh" target="_blank" class="text-decoration-none text-light"><i class="bi bi-google fs-5 me-2"></i></a>
+                        <a href="https://www.facebook.com/clbhtlt.ithusc" class="text-decoration-none text-light"><i class="bi bi-facebook fs-5 me-2"></i></a>
+                        <a href="https://www.youtube.com/watch?v=VvRiJCr3i10&t=2s&ab_channel=TR%C6%AF%E1%BB%9CNG%C4%90%E1%BA%A0IH%E1%BB%8CCKHOAH%E1%BB%8CC%2C%C4%90%E1%BA%A0IH%E1%BB%8CCHU%E1%BA%BE" class="text-decoration-none text-light"><i class="bi bi-youtube fs-5 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-github fs-5 me-2"></i></a>
+                        <a href="https://it.husc.edu.vn/CLB-ho-tro-lap-trinh" class="text-decoration-none text-light"><i class="bi bi-google fs-5 me-2"></i></a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
